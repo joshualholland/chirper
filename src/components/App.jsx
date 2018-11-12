@@ -78,7 +78,9 @@ class App extends Component {
                 onChange={(e) => this.setState({ chirp: e.target.value })}
                 value={this.state.chirp} />
             </div>
-            <button type="submit" className="btn btn-success" onClick={(e) => this.handleSubmit(e)}>Chirp</button>
+            <div className='col-12 text-center'>
+              <button type="submit" className="btn btn-success align-self-center" onClick={(e) => this.handleSubmit(e)}>Chirp</button>
+            </div>
           </form>
           <ChirpTimeline chirps={this.state.chirps} />
         </div>
